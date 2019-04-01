@@ -1,0 +1,328 @@
+Symbol range map extraction starting
+Processing 4 files
+startProcessing "com\sm9\prosperitymen\CmdReload.java" md5: 23b346683c1532751bfb2ffe44948a37
+@|com\sm9\prosperitymen\CmdReload.java|8|29|com.sm9.prosperitymen|package|com.sm9.prosperitymen|(file)
+Class Start: com.sm9.prosperitymen.CmdReload
+   @|com\sm9\prosperitymen\CmdReload.java|331|340|CmdReload|class|com.sm9.prosperitymen.CmdReload
+   @|com\sm9\prosperitymen\CmdReload.java|349|360|CommandBase|class|net.minecraft.command.CommandBase
+   Method Start: getName()Ljava/lang/String;
+      @|com\sm9\prosperitymen\CmdReload.java|368|376|Override|class|java.lang.Override
+      @|com\sm9\prosperitymen\CmdReload.java|388|394|String|class|java.lang.String
+      @|com\sm9\prosperitymen\CmdReload.java|395|402|getName|method|net.minecraft.command.ICommand|getName|()Ljava/lang/String;
+   Method End: getName()Ljava/lang/String;
+   Method Start: getUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\sm9\prosperitymen\CmdReload.java|497|510|commandSender|param|com.sm9.prosperitymen.CmdReload|getUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;|commandSender|0
+      @|com\sm9\prosperitymen\CmdReload.java|446|454|Override|class|java.lang.Override
+      @|com\sm9\prosperitymen\CmdReload.java|466|472|String|class|java.lang.String
+      @|com\sm9\prosperitymen\CmdReload.java|473|481|getUsage|method|net.minecraft.command.ICommand|getUsage|(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+      @|com\sm9\prosperitymen\CmdReload.java|482|496|ICommandSender|class|net.minecraft.command.ICommandSender
+   Method End: getUsage(Lnet/minecraft/command/ICommandSender;)Ljava/lang/String;
+   Method Start: execute(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\sm9\prosperitymen\CmdReload.java|602|613|localServer|param|com.sm9.prosperitymen.CmdReload|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|localServer|0
+      @|com\sm9\prosperitymen\CmdReload.java|630|643|commandSender|param|com.sm9.prosperitymen.CmdReload|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|commandSender|1
+      @|com\sm9\prosperitymen\CmdReload.java|654|659|sArgs|param|com.sm9.prosperitymen.CmdReload|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|sArgs|2
+      @|com\sm9\prosperitymen\CmdReload.java|553|561|Override|class|java.lang.Override
+      @|com\sm9\prosperitymen\CmdReload.java|578|585|execute|method|net.minecraft.command.ICommand|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+      @|com\sm9\prosperitymen\CmdReload.java|586|601|MinecraftServer|class|net.minecraft.server.MinecraftServer
+      @|com\sm9\prosperitymen\CmdReload.java|615|629|ICommandSender|class|net.minecraft.command.ICommandSender
+      @|com\sm9\prosperitymen\CmdReload.java|645|651|String|class|java.lang.String
+      @|com\sm9\prosperitymen\CmdReload.java|668|684|CommandException|class|net.minecraft.command.CommandException
+      @|com\sm9\prosperitymen\CmdReload.java|695|705|loadConfig|method|com.sm9.prosperitymen.ProsperityMen|loadConfig|()V
+      @|com\sm9\prosperitymen\CmdReload.java|717|730|commandSender|param|com.sm9.prosperitymen.CmdReload|execute|(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V|commandSender|1
+      @|com\sm9\prosperitymen\CmdReload.java|731|742|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\sm9\prosperitymen\CmdReload.java|747|766|TextComponentString|class|net.minecraft.util.text.TextComponentString
+   Method End: execute(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/command/ICommandSender;[Ljava/lang/String;)V
+Class End  : com.sm9.prosperitymen.CmdReload
+endProcessing "com\sm9\prosperitymen\CmdReload.java"
+
+startProcessing "com\sm9\prosperitymen\ForgeEventHandlers.java" md5: c85a704f315fc6f34b4f89dbd4b90a5a
+@|com\sm9\prosperitymen\ForgeEventHandlers.java|8|29|com.sm9.prosperitymen|package|com.sm9.prosperitymen|(file)
+Class Start: com.sm9.prosperitymen.ForgeEventHandlers
+   @|com\sm9\prosperitymen\ForgeEventHandlers.java|799|817|ForgeEventHandlers|class|com.sm9.prosperitymen.ForgeEventHandlers
+   Method Start: onLivingDrops(Lnet/minecraftforge/event/entity/living/LivingDropsEvent;)V
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|920|927|evEvent|param|com.sm9.prosperitymen.ForgeEventHandlers|onLivingDrops|(Lnet/minecraftforge/event/entity/living/LivingDropsEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|825|839|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|840|848|priority|method|net.minecraftforge.fml.common.eventhandler.SubscribeEvent|priority|()Lnet/minecraftforge/fml/common/eventhandler/EventPriority;
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|851|864|EventPriority|class|net.minecraftforge.fml.common.eventhandler.EventPriority
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|865|871|LOWEST|field|net.minecraftforge.fml.common.eventhandler.EventPriority|LOWEST
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|889|902|onLivingDrops|method|com.sm9.prosperitymen.ForgeEventHandlers|onLivingDrops|(Lnet/minecraftforge/event/entity/living/LivingDropsEvent;)V
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|903|919|LivingDropsEvent|class|net.minecraftforge.event.entity.living.LivingDropsEvent
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|946|956|maCrafting|field|com.sm9.prosperitymen.ProsperityMen|maCrafting
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1008|1017|ArrayList|class|java.util.ArrayList
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1018|1028|EntityItem|class|net.minecraft.entity.item.EntityItem
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1045|1054|ArrayList|class|java.util.ArrayList
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1056|1063|evEvent|param|com.sm9.prosperitymen.ForgeEventHandlers|onLivingDrops|(Lnet/minecraftforge/event/entity/living/LivingDropsEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1064|1072|getDrops|method|net.minecraftforge.event.entity.living.LivingDropsEvent|getDrops|()Ljava/util/List;
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1150|1162|DamageSource|class|net.minecraft.util.DamageSource
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1178|1185|evEvent|param|com.sm9.prosperitymen.ForgeEventHandlers|onLivingDrops|(Lnet/minecraftforge/event/entity/living/LivingDropsEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1186|1195|getSource|method|net.minecraftforge.event.entity.living.LivingDropsEvent|getSource|()Lnet/minecraft/util/DamageSource;
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1207|1213|Entity|class|net.minecraft.entity.Entity
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1242|1255|getTrueSource|method|net.minecraft.util.DamageSource|getTrueSource|()Lnet/minecraft/entity/Entity;
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1321|1333|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1377|1383|Entity|class|net.minecraft.entity.Entity
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1399|1406|evEvent|param|com.sm9.prosperitymen.ForgeEventHandlers|onLivingDrops|(Lnet/minecraftforge/event/entity/living/LivingDropsEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1407|1416|getEntity|method|net.minecraftforge.event.entity.EntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1482|1497|EntityPigZombie|class|net.minecraft.entity.monster.EntityPigZombie
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1541|1546|World|class|net.minecraft.world.World
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1573|1578|world|field|net.minecraft.entity.Entity|world
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1588|1600|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1616|1628|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1774|1783|dimension|field|net.minecraft.entity.Entity|dimension
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1797|1810|g_bNetherOnly|field|com.sm9.prosperitymen.ProsperityMen|g_bNetherOnly
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1854|1866|g_bDebugMode|field|com.sm9.prosperitymen.ProsperityMen|g_bDebugMode
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1886|1892|String|class|java.lang.String
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1904|1910|String|class|java.lang.String
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1911|1917|format|method|java.lang.String|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1982|1993|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|1998|2017|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2086|2098|g_bMeleeOnly|field|com.sm9.prosperitymen.ProsperityMen|g_bMeleeOnly
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2115|2127|isProjectile|method|net.minecraft.util.DamageSource|isProjectile|()Z
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2148|2160|g_bDebugMode|field|com.sm9.prosperitymen.ProsperityMen|g_bDebugMode
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2180|2186|String|class|java.lang.String
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2198|2204|String|class|java.lang.String
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2205|2211|format|method|java.lang.String|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2275|2286|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2291|2310|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2376|2382|Random|class|java.util.Random
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2393|2407|g_bWorldRandom|field|com.sm9.prosperitymen.ProsperityMen|g_bWorldRandom
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2421|2425|rand|field|net.minecraft.world.World|rand
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2432|2438|Random|class|java.util.Random
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2464|2468|Math|class|java.lang.Math
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2469|2474|round|method|java.lang.Math|round|(F)I
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2483|2492|nextFloat|method|java.util.Random|nextFloat|()F
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2529|2538|g_iChance|field|com.sm9.prosperitymen.ProsperityMen|g_iChance
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2566|2569|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2574|2584|EntityItem|class|net.minecraft.entity.item.EntityItem
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2610|2614|posX|field|net.minecraft.entity.Entity|posX
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2629|2633|posY|field|net.minecraft.entity.Entity|posY
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2648|2652|posZ|field|net.minecraft.entity.Entity|posZ
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2658|2667|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2668|2678|maCrafting|field|com.sm9.prosperitymen.ProsperityMen|maCrafting
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2711|2723|g_bDebugMode|field|com.sm9.prosperitymen.ProsperityMen|g_bDebugMode
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2739|2745|String|class|java.lang.String
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2757|2763|String|class|java.lang.String
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2764|2770|format|method|java.lang.String|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2821|2830|g_iChance|field|com.sm9.prosperitymen.ProsperityMen|g_iChance
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2852|2861|g_iChance|field|com.sm9.prosperitymen.ProsperityMen|g_iChance
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2907|2918|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2923|2942|TextComponentString|class|net.minecraft.util.text.TextComponentString
+   Method End: onLivingDrops(Lnet/minecraftforge/event/entity/living/LivingDropsEvent;)V
+   Method Start: tickPlayer(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3045|3052|evEvent|param|com.sm9.prosperitymen.ForgeEventHandlers|tickPlayer|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|2977|2991|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3008|3018|tickPlayer|method|com.sm9.prosperitymen.ForgeEventHandlers|tickPlayer|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3019|3044|TickEvent.PlayerTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3071|3081|maCrafting|field|com.sm9.prosperitymen.ProsperityMen|maCrafting
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3133|3145|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3162|3169|evEvent|param|com.sm9.prosperitymen.ForgeEventHandlers|tickPlayer|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3170|3176|player|field|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent|player
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3230|3235|world|field|net.minecraft.entity.Entity|world
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3236|3244|isRemote|field|net.minecraft.world.World|isRemote
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3248|3255|evEvent|param|com.sm9.prosperitymen.ForgeEventHandlers|tickPlayer|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3256|3261|phase|field|net.minecraftforge.fml.common.gameevent.TickEvent|phase
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3265|3280|TickEvent.Phase|class|net.minecraftforge.fml.common.gameevent.TickEvent.Phase
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3281|3284|END|field|net.minecraftforge.fml.common.gameevent.TickEvent.Phase|END
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3331|3335|Util|class|com.sm9.prosperitymen.Util
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3336|3367|playerMeetsPigmenAgroConditions|method|com.sm9.prosperitymen.Util|playerMeetsPigmenAgroConditions|(Lnet/minecraft/entity/player/EntityPlayer;)Z
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3425|3429|Util|class|com.sm9.prosperitymen.Util
+      @|com\sm9\prosperitymen\ForgeEventHandlers.java|3430|3441|angerPigmen|method|com.sm9.prosperitymen.Util|angerPigmen|(Lnet/minecraft/entity/player/EntityPlayer;)V
+   Method End: tickPlayer(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+Class End  : com.sm9.prosperitymen.ForgeEventHandlers
+endProcessing "com\sm9\prosperitymen\ForgeEventHandlers.java"
+
+startProcessing "com\sm9\prosperitymen\ProsperityMen.java" md5: 4e92651cefa64c9ded13332c60709bd4
+@|com\sm9\prosperitymen\ProsperityMen.java|8|29|com.sm9.prosperitymen|package|com.sm9.prosperitymen|(file)
+Class Start: com.sm9.prosperitymen.ProsperityMen
+   @|com\sm9\prosperitymen\ProsperityMen.java|525|528|Mod|class|net.minecraftforge.fml.common.Mod
+   @|com\sm9\prosperitymen\ProsperityMen.java|529|534|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|com\sm9\prosperitymen\ProsperityMen.java|537|550|ProsperityMen|class|com.sm9.prosperitymen.ProsperityMen
+   @|com\sm9\prosperitymen\ProsperityMen.java|551|556|MODID|field|com.sm9.prosperitymen.ProsperityMen|MODID
+   @|com\sm9\prosperitymen\ProsperityMen.java|558|562|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
+   @|com\sm9\prosperitymen\ProsperityMen.java|565|578|ProsperityMen|class|com.sm9.prosperitymen.ProsperityMen
+   @|com\sm9\prosperitymen\ProsperityMen.java|579|583|NAME|field|com.sm9.prosperitymen.ProsperityMen|NAME
+   @|com\sm9\prosperitymen\ProsperityMen.java|593|600|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|com\sm9\prosperitymen\ProsperityMen.java|603|616|ProsperityMen|class|com.sm9.prosperitymen.ProsperityMen
+   @|com\sm9\prosperitymen\ProsperityMen.java|617|624|VERSION|field|com.sm9.prosperitymen.ProsperityMen|VERSION
+   @|com\sm9\prosperitymen\ProsperityMen.java|634|646|dependencies|method|net.minecraftforge.fml.common.Mod|dependencies|()Ljava/lang/String;
+   @|com\sm9\prosperitymen\ProsperityMen.java|649|662|ProsperityMen|class|com.sm9.prosperitymen.ProsperityMen
+   @|com\sm9\prosperitymen\ProsperityMen.java|663|675|DEPENDENCIES|field|com.sm9.prosperitymen.ProsperityMen|DEPENDENCIES
+   @|com\sm9\prosperitymen\ProsperityMen.java|685|710|acceptedMinecraftVersions|method|net.minecraftforge.fml.common.Mod|acceptedMinecraftVersions|()Ljava/lang/String;
+   @|com\sm9\prosperitymen\ProsperityMen.java|731|755|acceptableRemoteVersions|method|net.minecraftforge.fml.common.Mod|acceptableRemoteVersions|()Ljava/lang/String;
+   @|com\sm9\prosperitymen\ProsperityMen.java|777|790|ProsperityMen|class|com.sm9.prosperitymen.ProsperityMen
+   @|com\sm9\prosperitymen\ProsperityMen.java|817|823|String|class|java.lang.String
+   @|com\sm9\prosperitymen\ProsperityMen.java|817|823|String|class|java.lang.String
+   @|com\sm9\prosperitymen\ProsperityMen.java|824|829|MODID|field|com.sm9.prosperitymen.ProsperityMen|MODID|
+   @|com\sm9\prosperitymen\ProsperityMen.java|873|879|String|class|java.lang.String
+   @|com\sm9\prosperitymen\ProsperityMen.java|873|879|String|class|java.lang.String
+   @|com\sm9\prosperitymen\ProsperityMen.java|880|884|NAME|field|com.sm9.prosperitymen.ProsperityMen|NAME|
+   @|com\sm9\prosperitymen\ProsperityMen.java|929|935|String|class|java.lang.String
+   @|com\sm9\prosperitymen\ProsperityMen.java|929|935|String|class|java.lang.String
+   @|com\sm9\prosperitymen\ProsperityMen.java|936|943|VERSION|field|com.sm9.prosperitymen.ProsperityMen|VERSION|
+   @|com\sm9\prosperitymen\ProsperityMen.java|979|985|String|class|java.lang.String
+   @|com\sm9\prosperitymen\ProsperityMen.java|979|985|String|class|java.lang.String
+   @|com\sm9\prosperitymen\ProsperityMen.java|986|999|MIN_FORGE_VER|field|com.sm9.prosperitymen.ProsperityMen|MIN_FORGE_VER|
+   @|com\sm9\prosperitymen\ProsperityMen.java|1042|1048|String|class|java.lang.String
+   @|com\sm9\prosperitymen\ProsperityMen.java|1042|1048|String|class|java.lang.String
+   @|com\sm9\prosperitymen\ProsperityMen.java|1049|1061|DEPENDENCIES|field|com.sm9.prosperitymen.ProsperityMen|DEPENDENCIES|
+   @|com\sm9\prosperitymen\ProsperityMen.java|1082|1095|ProsperityMen|class|com.sm9.prosperitymen.ProsperityMen
+   @|com\sm9\prosperitymen\ProsperityMen.java|1096|1109|MIN_FORGE_VER|field|com.sm9.prosperitymen.ProsperityMen|MIN_FORGE_VER
+   @|com\sm9\prosperitymen\ProsperityMen.java|1186|1192|Logger|class|org.apache.logging.log4j.Logger
+   @|com\sm9\prosperitymen\ProsperityMen.java|1186|1192|Logger|class|org.apache.logging.log4j.Logger
+   @|com\sm9\prosperitymen\ProsperityMen.java|1193|1202|g_lLogger|field|com.sm9.prosperitymen.ProsperityMen|g_lLogger|
+   @|com\sm9\prosperitymen\ProsperityMen.java|1230|1242|g_bDebugMode|field|com.sm9.prosperitymen.ProsperityMen|g_bDebugMode|
+   @|com\sm9\prosperitymen\ProsperityMen.java|1278|1290|g_bMeleeOnly|field|com.sm9.prosperitymen.ProsperityMen|g_bMeleeOnly|
+   @|com\sm9\prosperitymen\ProsperityMen.java|1325|1338|g_bNetherOnly|field|com.sm9.prosperitymen.ProsperityMen|g_bNetherOnly|
+   @|com\sm9\prosperitymen\ProsperityMen.java|1373|1387|g_bWorldRandom|field|com.sm9.prosperitymen.ProsperityMen|g_bWorldRandom|
+   @|com\sm9\prosperitymen\ProsperityMen.java|1419|1428|g_iChance|field|com.sm9.prosperitymen.ProsperityMen|g_iChance|
+   @|com\sm9\prosperitymen\ProsperityMen.java|1457|1469|g_iAgroRange|field|com.sm9.prosperitymen.ProsperityMen|g_iAgroRange|
+   @|com\sm9\prosperitymen\ProsperityMen.java|1494|1507|Configuration|class|net.minecraftforge.common.config.Configuration
+   @|com\sm9\prosperitymen\ProsperityMen.java|1494|1507|Configuration|class|net.minecraftforge.common.config.Configuration
+   @|com\sm9\prosperitymen\ProsperityMen.java|1508|1517|g_cConfig|field|com.sm9.prosperitymen.ProsperityMen|g_cConfig|
+   @|com\sm9\prosperitymen\ProsperityMen.java|1537|1541|Item|class|net.minecraft.item.Item
+   @|com\sm9\prosperitymen\ProsperityMen.java|1537|1541|Item|class|net.minecraft.item.Item
+   @|com\sm9\prosperitymen\ProsperityMen.java|1542|1552|maCrafting|field|com.sm9.prosperitymen.ProsperityMen|maCrafting|
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\sm9\prosperitymen\ProsperityMen.java|1627|1634|evEvent|param|com.sm9.prosperitymen.ProsperityMen|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ProsperityMen.java|1560|1576|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\sm9\prosperitymen\ProsperityMen.java|1593|1600|preInit|method|com.sm9.prosperitymen.ProsperityMen|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\sm9\prosperitymen\ProsperityMen.java|1601|1626|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\sm9\prosperitymen\ProsperityMen.java|1650|1664|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\sm9\prosperitymen\ProsperityMen.java|1665|1674|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\sm9\prosperitymen\ProsperityMen.java|1675|1683|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\sm9\prosperitymen\ProsperityMen.java|1688|1706|ForgeEventHandlers|class|com.sm9.prosperitymen.ForgeEventHandlers
+      @|com\sm9\prosperitymen\ProsperityMen.java|1720|1729|g_lLogger|field|com.sm9.prosperitymen.ProsperityMen|g_lLogger
+      @|com\sm9\prosperitymen\ProsperityMen.java|1732|1742|LogManager|class|org.apache.logging.log4j.LogManager
+      @|com\sm9\prosperitymen\ProsperityMen.java|1743|1752|getLogger|method|org.apache.logging.log4j.LogManager|getLogger|(Ljava/lang/String;)Lorg/apache/logging/log4j/Logger;
+      @|com\sm9\prosperitymen\ProsperityMen.java|1780|1784|File|class|java.io.File
+      @|com\sm9\prosperitymen\ProsperityMen.java|1805|1809|File|class|java.io.File
+      @|com\sm9\prosperitymen\ProsperityMen.java|1810|1817|evEvent|param|com.sm9.prosperitymen.ProsperityMen|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ProsperityMen.java|1818|1846|getModConfigurationDirectory|method|net.minecraftforge.fml.common.event.FMLPreInitializationEvent|getModConfigurationDirectory|()Ljava/io/File;
+      @|com\sm9\prosperitymen\ProsperityMen.java|1880|1884|File|class|java.io.File
+      @|com\sm9\prosperitymen\ProsperityMen.java|1899|1903|File|class|java.io.File
+      @|com\sm9\prosperitymen\ProsperityMen.java|1941|1950|g_cConfig|field|com.sm9.prosperitymen.ProsperityMen|g_cConfig
+      @|com\sm9\prosperitymen\ProsperityMen.java|1957|1970|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|com\sm9\prosperitymen\ProsperityMen.java|1990|2000|loadConfig|method|com.sm9.prosperitymen.ProsperityMen|loadConfig|()V
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\sm9\prosperitymen\ProsperityMen.java|2085|2092|evEvent|param|com.sm9.prosperitymen.ProsperityMen|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ProsperityMen.java|2016|2032|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\sm9\prosperitymen\ProsperityMen.java|2049|2057|postInit|method|com.sm9.prosperitymen.ProsperityMen|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\sm9\prosperitymen\ProsperityMen.java|2058|2084|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|com\sm9\prosperitymen\ProsperityMen.java|2104|2114|maCrafting|field|com.sm9.prosperitymen.ProsperityMen|maCrafting
+      @|com\sm9\prosperitymen\ProsperityMen.java|2117|2121|Item|class|net.minecraft.item.Item
+      @|com\sm9\prosperitymen\ProsperityMen.java|2122|2135|getByNameOrId|method|net.minecraft.item.Item|getByNameOrId|(Ljava/lang/String;)Lnet/minecraft/item/Item;
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+   Method Start: serverLoad(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
+      @|com\sm9\prosperitymen\ProsperityMen.java|2248|2255|evEvent|param|com.sm9.prosperitymen.ProsperityMen|serverLoad|(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ProsperityMen.java|2181|2197|Mod.EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\sm9\prosperitymen\ProsperityMen.java|2214|2224|serverLoad|method|com.sm9.prosperitymen.ProsperityMen|serverLoad|(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
+      @|com\sm9\prosperitymen\ProsperityMen.java|2225|2247|FMLServerStartingEvent|class|net.minecraftforge.fml.common.event.FMLServerStartingEvent
+      @|com\sm9\prosperitymen\ProsperityMen.java|2267|2274|evEvent|param|com.sm9.prosperitymen.ProsperityMen|serverLoad|(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V|evEvent|0
+      @|com\sm9\prosperitymen\ProsperityMen.java|2275|2296|registerServerCommand|method|net.minecraftforge.fml.common.event.FMLServerStartingEvent|registerServerCommand|(Lnet/minecraft/command/ICommand;)V
+      @|com\sm9\prosperitymen\ProsperityMen.java|2301|2310|CmdReload|class|com.sm9.prosperitymen.CmdReload
+   Method End: serverLoad(Lnet/minecraftforge/fml/common/event/FMLServerStartingEvent;)V
+   Method Start: loadConfig()V
+      @|com\sm9\prosperitymen\ProsperityMen.java|2345|2355|loadConfig|method|com.sm9.prosperitymen.ProsperityMen|loadConfig|()V
+      @|com\sm9\prosperitymen\ProsperityMen.java|2372|2381|g_cConfig|field|com.sm9.prosperitymen.ProsperityMen|g_cConfig
+      @|com\sm9\prosperitymen\ProsperityMen.java|2382|2386|load|method|net.minecraftforge.common.config.Configuration|load|()V
+      @|com\sm9\prosperitymen\ProsperityMen.java|2399|2411|g_bDebugMode|field|com.sm9.prosperitymen.ProsperityMen|g_bDebugMode
+      @|com\sm9\prosperitymen\ProsperityMen.java|2414|2423|g_cConfig|field|com.sm9.prosperitymen.ProsperityMen|g_cConfig
+      @|com\sm9\prosperitymen\ProsperityMen.java|2424|2434|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\sm9\prosperitymen\ProsperityMen.java|2448|2461|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|com\sm9\prosperitymen\ProsperityMen.java|2462|2478|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|com\sm9\prosperitymen\ProsperityMen.java|2547|2556|g_iChance|field|com.sm9.prosperitymen.ProsperityMen|g_iChance
+      @|com\sm9\prosperitymen\ProsperityMen.java|2559|2568|g_cConfig|field|com.sm9.prosperitymen.ProsperityMen|g_cConfig
+      @|com\sm9\prosperitymen\ProsperityMen.java|2569|2575|getInt|method|net.minecraftforge.common.config.Configuration|getInt|(Ljava/lang/String;Ljava/lang/String;IIILjava/lang/String;)I
+      @|com\sm9\prosperitymen\ProsperityMen.java|2590|2603|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|com\sm9\prosperitymen\ProsperityMen.java|2604|2620|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|com\sm9\prosperitymen\ProsperityMen.java|2676|2688|g_bMeleeOnly|field|com.sm9.prosperitymen.ProsperityMen|g_bMeleeOnly
+      @|com\sm9\prosperitymen\ProsperityMen.java|2691|2700|g_cConfig|field|com.sm9.prosperitymen.ProsperityMen|g_cConfig
+      @|com\sm9\prosperitymen\ProsperityMen.java|2701|2711|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\sm9\prosperitymen\ProsperityMen.java|2725|2738|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|com\sm9\prosperitymen\ProsperityMen.java|2739|2755|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|com\sm9\prosperitymen\ProsperityMen.java|2835|2848|g_bNetherOnly|field|com.sm9.prosperitymen.ProsperityMen|g_bNetherOnly
+      @|com\sm9\prosperitymen\ProsperityMen.java|2851|2860|g_cConfig|field|com.sm9.prosperitymen.ProsperityMen|g_cConfig
+      @|com\sm9\prosperitymen\ProsperityMen.java|2861|2871|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\sm9\prosperitymen\ProsperityMen.java|2886|2899|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|com\sm9\prosperitymen\ProsperityMen.java|2900|2916|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|com\sm9\prosperitymen\ProsperityMen.java|2991|3005|g_bWorldRandom|field|com.sm9.prosperitymen.ProsperityMen|g_bWorldRandom
+      @|com\sm9\prosperitymen\ProsperityMen.java|3008|3017|g_cConfig|field|com.sm9.prosperitymen.ProsperityMen|g_cConfig
+      @|com\sm9\prosperitymen\ProsperityMen.java|3018|3028|getBoolean|method|net.minecraftforge.common.config.Configuration|getBoolean|(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)Z
+      @|com\sm9\prosperitymen\ProsperityMen.java|3044|3057|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|com\sm9\prosperitymen\ProsperityMen.java|3058|3074|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|com\sm9\prosperitymen\ProsperityMen.java|3150|3162|g_iAgroRange|field|com.sm9.prosperitymen.ProsperityMen|g_iAgroRange
+      @|com\sm9\prosperitymen\ProsperityMen.java|3165|3174|g_cConfig|field|com.sm9.prosperitymen.ProsperityMen|g_cConfig
+      @|com\sm9\prosperitymen\ProsperityMen.java|3175|3181|getInt|method|net.minecraftforge.common.config.Configuration|getInt|(Ljava/lang/String;Ljava/lang/String;IIILjava/lang/String;)I
+      @|com\sm9\prosperitymen\ProsperityMen.java|3202|3215|Configuration|class|net.minecraftforge.common.config.Configuration
+      @|com\sm9\prosperitymen\ProsperityMen.java|3216|3232|CATEGORY_GENERAL|field|net.minecraftforge.common.config.Configuration|CATEGORY_GENERAL
+      @|com\sm9\prosperitymen\ProsperityMen.java|3350|3359|g_cConfig|field|com.sm9.prosperitymen.ProsperityMen|g_cConfig
+      @|com\sm9\prosperitymen\ProsperityMen.java|3360|3364|save|method|net.minecraftforge.common.config.Configuration|save|()V
+   Method End: loadConfig()V
+Class End  : com.sm9.prosperitymen.ProsperityMen
+endProcessing "com\sm9\prosperitymen\ProsperityMen.java"
+
+startProcessing "com\sm9\prosperitymen\Util.java" md5: e66ddd56bad5b9616e05854e3f5adaa3
+@|com\sm9\prosperitymen\Util.java|8|29|com.sm9.prosperitymen|package|com.sm9.prosperitymen|(file)
+Class Start: com.sm9.prosperitymen.Util
+   @|com\sm9\prosperitymen\Util.java|436|440|Util|class|com.sm9.prosperitymen.Util
+   Method Start: playerMeetsPigmenAgroConditions(Lnet/minecraft/entity/player/EntityPlayer;)Z
+      @|com\sm9\prosperitymen\Util.java|514|525|localPlayer|param|com.sm9.prosperitymen.Util|playerMeetsPigmenAgroConditions|(Lnet/minecraft/entity/player/EntityPlayer;)Z|localPlayer|0
+      @|com\sm9\prosperitymen\Util.java|469|500|playerMeetsPigmenAgroConditions|method|com.sm9.prosperitymen.Util|playerMeetsPigmenAgroConditions|(Lnet/minecraft/entity/player/EntityPlayer;)Z
+      @|com\sm9\prosperitymen\Util.java|501|513|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\sm9\prosperitymen\Util.java|544|556|g_iAgroRange|field|com.sm9.prosperitymen.ProsperityMen|g_iAgroRange
+      @|com\sm9\prosperitymen\Util.java|608|619|localPlayer|param|com.sm9.prosperitymen.Util|playerMeetsPigmenAgroConditions|(Lnet/minecraft/entity/player/EntityPlayer;)Z|localPlayer|0
+      @|com\sm9\prosperitymen\Util.java|620|630|isCreative|method|net.minecraft.entity.player.EntityPlayer|isCreative|()Z
+      @|com\sm9\prosperitymen\Util.java|636|647|localPlayer|param|com.sm9.prosperitymen.Util|playerMeetsPigmenAgroConditions|(Lnet/minecraft/entity/player/EntityPlayer;)Z|localPlayer|0
+      @|com\sm9\prosperitymen\Util.java|648|659|isSpectator|method|net.minecraft.entity.player.EntityPlayer|isSpectator|()Z
+      @|com\sm9\prosperitymen\Util.java|710|725|InventoryPlayer|class|net.minecraft.entity.player.InventoryPlayer
+      @|com\sm9\prosperitymen\Util.java|743|754|localPlayer|param|com.sm9.prosperitymen.Util|playerMeetsPigmenAgroConditions|(Lnet/minecraft/entity/player/EntityPlayer;)Z|localPlayer|0
+      @|com\sm9\prosperitymen\Util.java|755|764|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com\sm9\prosperitymen\Util.java|774|783|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\sm9\prosperitymen\Util.java|840|853|getHotbarSize|method|net.minecraft.entity.player.InventoryPlayer|getHotbarSize|()I
+      @|com\sm9\prosperitymen\Util.java|905|919|getStackInSlot|method|net.minecraft.inventory.IInventory|getStackInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com\sm9\prosperitymen\Util.java|953|960|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com\sm9\prosperitymen\Util.java|963|978|getRegistryName|method|net.minecraftforge.registries.IForgeRegistryEntry|getRegistryName|()Lnet/minecraft/util/ResourceLocation;
+      @|com\sm9\prosperitymen\Util.java|981|989|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\sm9\prosperitymen\Util.java|992|998|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|com\sm9\prosperitymen\Util.java|1046|1057|getMetadata|method|net.minecraft.item.ItemStack|getMetadata|()I
+   Method End: playerMeetsPigmenAgroConditions(Lnet/minecraft/entity/player/EntityPlayer;)Z
+   Method Start: angerPigmen(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com\sm9\prosperitymen\Util.java|1223|1234|localPlayer|param|com.sm9.prosperitymen.Util|angerPigmen|(Lnet/minecraft/entity/player/EntityPlayer;)V|localPlayer|0
+      @|com\sm9\prosperitymen\Util.java|1198|1209|angerPigmen|method|com.sm9.prosperitymen.Util|angerPigmen|(Lnet/minecraft/entity/player/EntityPlayer;)V
+      @|com\sm9\prosperitymen\Util.java|1210|1222|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\sm9\prosperitymen\Util.java|1250|1258|BlockPos|class|net.minecraft.util.math.BlockPos
+      @|com\sm9\prosperitymen\Util.java|1273|1284|localPlayer|param|com.sm9.prosperitymen.Util|angerPigmen|(Lnet/minecraft/entity/player/EntityPlayer;)V|localPlayer|0
+      @|com\sm9\prosperitymen\Util.java|1285|1296|getPosition|method|net.minecraft.command.ICommandSender|getPosition|()Lnet/minecraft/util/math/BlockPos;
+      @|com\sm9\prosperitymen\Util.java|1308|1316|BlockPos|class|net.minecraft.util.math.BlockPos
+      @|com\sm9\prosperitymen\Util.java|1331|1339|BlockPos|class|net.minecraft.util.math.BlockPos
+      @|com\sm9\prosperitymen\Util.java|1353|1356|add|method|net.minecraft.util.math.BlockPos|add|(III)Lnet/minecraft/util/math/BlockPos;
+      @|com\sm9\prosperitymen\Util.java|1358|1370|g_iAgroRange|field|com.sm9.prosperitymen.ProsperityMen|g_iAgroRange
+      @|com\sm9\prosperitymen\Util.java|1373|1385|g_iAgroRange|field|com.sm9.prosperitymen.ProsperityMen|g_iAgroRange
+      @|com\sm9\prosperitymen\Util.java|1388|1400|g_iAgroRange|field|com.sm9.prosperitymen.ProsperityMen|g_iAgroRange
+      @|com\sm9\prosperitymen\Util.java|1411|1419|BlockPos|class|net.minecraft.util.math.BlockPos
+      @|com\sm9\prosperitymen\Util.java|1432|1440|BlockPos|class|net.minecraft.util.math.BlockPos
+      @|com\sm9\prosperitymen\Util.java|1454|1457|add|method|net.minecraft.util.math.BlockPos|add|(III)Lnet/minecraft/util/math/BlockPos;
+      @|com\sm9\prosperitymen\Util.java|1459|1471|g_iAgroRange|field|com.sm9.prosperitymen.ProsperityMen|g_iAgroRange
+      @|com\sm9\prosperitymen\Util.java|1474|1486|g_iAgroRange|field|com.sm9.prosperitymen.ProsperityMen|g_iAgroRange
+      @|com\sm9\prosperitymen\Util.java|1489|1501|g_iAgroRange|field|com.sm9.prosperitymen.ProsperityMen|g_iAgroRange
+      @|com\sm9\prosperitymen\Util.java|1513|1526|AxisAlignedBB|class|net.minecraft.util.math.AxisAlignedBB
+      @|com\sm9\prosperitymen\Util.java|1549|1562|AxisAlignedBB|class|net.minecraft.util.math.AxisAlignedBB
+      @|com\sm9\prosperitymen\Util.java|1589|1593|List|class|java.util.List
+      @|com\sm9\prosperitymen\Util.java|1594|1609|EntityPigZombie|class|net.minecraft.entity.monster.EntityPigZombie
+      @|com\sm9\prosperitymen\Util.java|1624|1635|localPlayer|param|com.sm9.prosperitymen.Util|angerPigmen|(Lnet/minecraft/entity/player/EntityPlayer;)V|localPlayer|0
+      @|com\sm9\prosperitymen\Util.java|1636|1641|world|field|net.minecraft.entity.Entity|world
+      @|com\sm9\prosperitymen\Util.java|1642|1663|getEntitiesWithinAABB|method|net.minecraft.world.World|getEntitiesWithinAABB|(Ljava/lang/Class;Lnet/minecraft/util/math/AxisAlignedBB;)Ljava/util/List;
+      @|com\sm9\prosperitymen\Util.java|1664|1679|EntityPigZombie|class|net.minecraft.entity.monster.EntityPigZombie
+      @|com\sm9\prosperitymen\Util.java|1719|1734|EntityPigZombie|class|net.minecraft.entity.monster.EntityPigZombie
+      @|com\sm9\prosperitymen\Util.java|1783|1799|getRevengeTarget|method|net.minecraft.entity.EntityLivingBase|getRevengeTarget|()Lnet/minecraft/entity/EntityLivingBase;
+      @|com\sm9\prosperitymen\Util.java|1813|1825|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\sm9\prosperitymen\Util.java|1853|1869|setRevengeTarget|method|net.minecraft.entity.EntityLivingBase|setRevengeTarget|(Lnet/minecraft/entity/EntityLivingBase;)V
+      @|com\sm9\prosperitymen\Util.java|1870|1881|localPlayer|param|com.sm9.prosperitymen.Util|angerPigmen|(Lnet/minecraft/entity/player/EntityPlayer;)V|localPlayer|0
+      @|com\sm9\prosperitymen\Util.java|1924|1939|getAttackTarget|method|net.minecraft.entity.EntityLiving|getAttackTarget|()Lnet/minecraft/entity/EntityLivingBase;
+      @|com\sm9\prosperitymen\Util.java|1953|1965|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\sm9\prosperitymen\Util.java|1993|2008|setAttackTarget|method|net.minecraft.entity.EntityLiving|setAttackTarget|(Lnet/minecraft/entity/EntityLivingBase;)V
+      @|com\sm9\prosperitymen\Util.java|2009|2020|localPlayer|param|com.sm9.prosperitymen.Util|angerPigmen|(Lnet/minecraft/entity/player/EntityPlayer;)V|localPlayer|0
+   Method End: angerPigmen(Lnet/minecraft/entity/player/EntityPlayer;)V
+Class End  : com.sm9.prosperitymen.Util
+endProcessing "com\sm9\prosperitymen\Util.java"
+

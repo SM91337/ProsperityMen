@@ -1,0 +1,16 @@
+[
+{
+  "modid": "prosperitymen",
+  "name": "Prosperity Men",
+  "description": "Heavily guarded prosperity shards.",
+  "version": "0.1.1",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["SM9"],
+  "credits": "FatherToast, McJty, gigaherz, FusionLord, Cypher, Virtuoel and everyone else that provided guidance and input :)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
