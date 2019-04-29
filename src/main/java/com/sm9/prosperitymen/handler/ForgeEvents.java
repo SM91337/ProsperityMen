@@ -23,6 +23,7 @@ import org.apache.logging.log4j.LogManager;
 
 import java.io.File;
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 
 import static com.sm9.prosperitymen.ProsperityMen.maCrafting;
@@ -58,22 +59,31 @@ public class ForgeEvents {
         List<EntityItem> entityDrops = evEvent.getDrops();
 
         if (entityDrops == null) {
-            System.out.println("EntityDrops are null");
             return;
+        }
+
+        ItemStack itemStack;
+
+        for (EntityItem item : entityDrops) {
+            itemStack = item.getItem();
+
+            if (!Objects.requireNonNull(itemStack.getItem().getRegistryName()).toString().equals("mysticalagriculture:crafting") || itemStack.getMetadata() != 5) {
+                continue;
+            }
+
+            entityDrops.remove(item);
         }
 
         DamageSource damageSource = evEvent.getSource();
         Entity damageEntity = damageSource.getTrueSource();
 
         if (!(damageEntity instanceof EntityPlayer)) {
-            System.out.println("DamageEntity is null");
             return;
         }
 
         Entity damageVictim = evEvent.getEntity();
 
         if (!(damageVictim instanceof EntityPigZombie)) {
-            System.out.println("Damage Victim not pig zombie");
             return;
         }
 
@@ -81,7 +91,6 @@ public class ForgeEvents {
         EntityPlayer localPlayer = (EntityPlayer) damageEntity;
 
         if (localWorld == null) {
-            System.out.println("Local world is null");
             return;
         }
 
@@ -91,7 +100,6 @@ public class ForgeEvents {
             if (debugMode) {
                 General.printToPlayer(localPlayer, "Ignoring none nether kill.");
             }
-            System.out.println("Nether only");
             return;
         }
 
@@ -99,7 +107,6 @@ public class ForgeEvents {
             if (debugMode) {
                 General.printToPlayer(localPlayer, "Ignoring none melee kill.");
             }
-            System.out.println("Not melee");
             return;
         }
 
