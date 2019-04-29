@@ -22,6 +22,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import org.apache.logging.log4j.LogManager;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
@@ -61,8 +62,9 @@ public class ForgeEvents {
         if (entityDrops == null) {
             return;
         }
-
+        
         ItemStack itemStack;
+        ArrayList<EntityItem> dropsToRemove = new ArrayList<>();
 
         for (EntityItem item : entityDrops) {
             itemStack = item.getItem();
@@ -71,8 +73,10 @@ public class ForgeEvents {
                 continue;
             }
 
-            entityDrops.remove(item);
+            dropsToRemove.add(item);
         }
+
+        entityDrops.removeAll(dropsToRemove);
 
         DamageSource damageSource = evEvent.getSource();
         Entity damageEntity = damageSource.getTrueSource();
