@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="ProsperityMen.api" target="1.8" />
+      <module name="ProsperityMen.main" target="1.8" />
+      <module name="ProsperityMen.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
