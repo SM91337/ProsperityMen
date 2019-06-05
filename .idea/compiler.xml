@@ -5,6 +5,9 @@
       <module name="ProsperityMen.api" target="1.8" />
       <module name="ProsperityMen.main" target="1.8" />
       <module name="ProsperityMen.test" target="1.8" />
+      <module name="ProsperityMen_api" target="1.8" />
+      <module name="ProsperityMen_main" target="1.8" />
+      <module name="ProsperityMen_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

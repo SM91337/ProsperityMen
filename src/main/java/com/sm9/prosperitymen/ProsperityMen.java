@@ -6,7 +6,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-import org.apache.logging.log4j.Logger;
 
 @Mod
         (
@@ -19,7 +18,6 @@ import org.apache.logging.log4j.Logger;
         )
 public
 class ProsperityMen {
-    public static Logger pmLogger;
     public static Item maCrafting;
 
     @Mod.EventHandler

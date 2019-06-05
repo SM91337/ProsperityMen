@@ -4,13 +4,15 @@ import net.minecraft.entity.monster.EntityPigZombie;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
 
 import java.util.Formatter;
 import java.util.List;
-import java.util.Objects;
 
 import static com.sm9.prosperitymen.common.Config.MainConfig.agroRange;
 
@@ -26,11 +28,17 @@ public class General {
 
         InventoryPlayer localInventory = localPlayer.inventory;
         ItemStack currentItem;
+        ResourceLocation resourceLocation;
 
         for (int i = 0; i < InventoryPlayer.getHotbarSize(); i++) {
             currentItem = localInventory.getStackInSlot(i);
+            resourceLocation = currentItem.getItem().getRegistryName();
 
-            if (!Objects.requireNonNull(currentItem.getItem().getRegistryName()).toString().equals("mysticalagriculture:crafting") || currentItem.getMetadata() != 5) {
+            if (resourceLocation == null) {
+                continue;
+            }
+
+            if (!resourceLocation.toString().equals("mysticalagriculture:crafting") || currentItem.getMetadata() != 5) {
                 continue;
             }
 
@@ -41,12 +49,17 @@ public class General {
     }
 
     public static void angerPigmen(EntityPlayer localPlayer) {
-        BlockPos bpPlayerPos = localPlayer.getPosition();
-        BlockPos bpStart = new BlockPos(bpPlayerPos).add(-agroRange, -agroRange, -agroRange);
-        BlockPos bpEnd = new BlockPos(bpPlayerPos).add(+agroRange, +agroRange, +agroRange);
+        World worldAny = localPlayer.getEntityWorld();
 
-        AxisAlignedBB axisAlignedBaby = new AxisAlignedBB(bpStart, bpEnd);
-        List<EntityPigZombie> pigMenList = localPlayer.world.getEntitiesWithinAABB(EntityPigZombie.class, axisAlignedBaby);
+        if (!(worldAny instanceof WorldServer)) {
+            return;
+        }
+
+        WorldServer worldServer = (WorldServer) worldAny;
+        BlockPos playerPosition = localPlayer.getPosition();
+
+        AxisAlignedBB axisAlignedBaby = new AxisAlignedBB(new BlockPos(playerPosition).add(-agroRange, -agroRange, -agroRange), new BlockPos(playerPosition).add(+agroRange, +agroRange, +agroRange));
+        List<EntityPigZombie> pigMenList = worldServer.getEntitiesWithinAABB(EntityPigZombie.class, axisAlignedBaby);
 
         for (EntityPigZombie pigMan : pigMenList) {
             if ((pigMan.getRevengeTarget() instanceof EntityPlayer) || pigMan.getAttackTarget() instanceof EntityPlayer) {
@@ -58,9 +71,8 @@ public class General {
         }
     }
 
-    public static void printToPlayer(EntityPlayer entityPlayer, String sFormat, Object... oArgs) {
-        String sMessage = new Formatter().format(sFormat, oArgs).toString();
-        entityPlayer.sendMessage(new TextComponentString("[PB] " + sMessage));
+    public static void printToPlayer(EntityPlayer entityPlayer, String format, Object... args) {
+        String message = new Formatter().format(format, args).toString();
+        entityPlayer.sendMessage(new TextComponentString("[PB] " + message));
     }
-
 }

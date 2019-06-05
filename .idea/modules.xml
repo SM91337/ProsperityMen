@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProsperityMen.iml" filepath="$PROJECT_DIR$/.idea/modules/ProsperityMen.iml" group="ProsperityMen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProsperityMen_api.iml" filepath="$PROJECT_DIR$/.idea/modules/ProsperityMen_api.iml" group="ProsperityMen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProsperityMen_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ProsperityMen_main.iml" group="ProsperityMen" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProsperityMen_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ProsperityMen_test.iml" group="ProsperityMen" />
+    </modules>
+  </component>
+</project>
